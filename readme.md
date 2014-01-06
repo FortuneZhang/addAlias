@@ -15,4 +15,5 @@ I'm fortune [action => press enter]
 it's over
 
 you don't need warry that you input blan in alias info, I can do it . 
+please don't delete this floder.
 
