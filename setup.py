@@ -33,7 +33,8 @@ if not alias_file_exist:
 
 #add alias to bash_alias
 bash_alias_file_path  = os.path.join(home_dir, '.bash_alias')
-if not os.path.exists(bash_alias_file_path):
+
+if  os.path.exists(bash_alias_file_path):
 	bash_alias_file = open(bash_alias_file_path,'a')
 	add_alias_path = os.path.join(os.path.abspath(os.getcwd()), 'addAlias.py')
 	print >> bash_alias_file, ('alias addAlias=\'python {add_alias_path} && source ~/.bash_alias \''.format(add_alias_path=add_alias_path))
