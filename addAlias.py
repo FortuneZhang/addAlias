@@ -16,7 +16,6 @@ print(alias_info)
 alias_file_path = os.path.join(home_dir, '.bash_alias')
 if not os.path.exists(alias_file_path):
 	print('.bash_alias file not exist, you can do \' python setup.py \' in your clone floder')
-	return 
 else:
 	alias_file = open(alias_file_path, 'a')
 	print >> alias_file, alias_info
